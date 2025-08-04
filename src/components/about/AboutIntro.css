@@ -1,0 +1,297 @@
+/* General styling */
+.about-intro {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  text-align: left;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  z-index: 20;
+  position: relative;
+}
+
+.left-panel .title {
+  font-size: 2.7rem;
+  font-weight: 800;
+  width: 800px;
+  margin-left: 40px;
+  margin-bottom: 2rem;
+}
+
+.left-panel .description {
+  font-size: 1.2rem;
+  margin-left: 270px;
+  color: #a0a0a0;
+}
+
+.quote-container {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  margin-left: 300px;
+  border-left: 3px solid #3b82f6;
+  background-color: rgba(59, 130, 246, 0.05);
+  border-radius: 0.5rem;
+}
+
+.quote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.scroll-button:hover {
+  background-color: #2563eb;
+}
+
+/* Center Image */
+.center-image {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+.center-image img {
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Right Panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+}
+
+/* Lingkaran besar */
+.big-circle {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: -300px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.2);
+  top: 0%;
+
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: glowPulse 5s infinite ease-in-out;
+}
+
+/* Efek glow lingkaran */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(59,130,246,0.3); }
+  50% { box-shadow: 0 0 30px rgba(59,130,246,0.6); }
+}
+
+/* Ikon sosial */
+.social-icons {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  left: -200px;
+  z-index: 10;
+}
+
+.social-icon-wrapper {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  border: 1px solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0a0a0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 20;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.social-icon-wrapper:hover {
+  transform: scale(1.1);
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.social-icon-wrapper.top {
+  top: -4%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.social-icon-wrapper.second {
+  top: 10%;
+  left: 94%;
+  transform: translate(-50%, -50%);
+}
+.social-icon-wrapper.third {
+  bottom: 35%;
+  left: 112%;
+  transform: translate(-50%, 50%);
+}
+.social-icon-wrapper.bottom {
+  bottom: 3%;
+  left: 80%;
+  transform: translate(-50%, 50%);
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .about-intro {
+    flex-direction: row;
+    padding: 4rem 2rem;
+  }
+  .left-panel {
+    text-align: right;
+    margin-right: -14em;
+  }
+  .center-image {
+    max-width: 800px;
+    margin: 0 0rem;
+  }
+  .right-panel {
+    margin-left: -15rem;
+  }
+}
+
+/* Tambahan efek warna untuk tiap platform */
+.social-icon-wrapper.linkedin:hover {
+  background-color: #0a66c2; /* LinkedIn Blue */
+  box-shadow: 0 0 15px rgba(10, 102, 194, 0.7);
+  color: white;
+}
+
+.social-icon-wrapper.github:hover {
+  background-color: #24292e; /* GitHub Dark */
+  box-shadow: 0 0 15px rgba(36, 41, 46, 0.7);
+  color: white;
+}
+
+.social-icon-wrapper.email:hover {
+  background-color: #d93025; /* Gmail Red */
+  box-shadow: 0 0 15px rgba(217, 48, 37, 0.7);
+  color: white;
+}
+
+.social-icon-wrapper.whatsapp:hover {
+  background-color: #25d366; /* WhatsApp Green */
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+  color: white;
+}
+/* Animasi pulse umum */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* LinkedIn - biru */
+.social-icon-wrapper.linkedin {
+  animation: pulseGlowLinkedIn 3s infinite ease-in-out;
+}
+@keyframes pulseGlowLinkedIn {
+  0% {
+    box-shadow: 0 0 5px rgba(10, 102, 194, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(10, 102, 194, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(10, 102, 194, 0.3);
+  }
+}
+
+/* GitHub - abu gelap */
+.social-icon-wrapper.github {
+  animation: pulseGlowGitHub 3s infinite ease-in-out;
+}
+@keyframes pulseGlowGitHub {
+  0% {
+    box-shadow: 0 0 5px rgba(36, 41, 46, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(36, 41, 46, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(36, 41, 46, 0.3);
+  }
+}
+
+/* Email - merah */
+.social-icon-wrapper.email {
+  animation: pulseGlowEmail 3s infinite ease-in-out;
+}
+@keyframes pulseGlowEmail {
+  0% {
+    box-shadow: 0 0 5px rgba(217, 48, 37, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(217, 48, 37, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(217, 48, 37, 0.3);
+  }
+}
+
+/* WhatsApp - hijau */
+.social-icon-wrapper.whatsapp {
+  animation: pulseGlowWhatsApp 3s infinite ease-in-out;
+}
+@keyframes pulseGlowWhatsApp {
+  0% {
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.3);
+  }
+}

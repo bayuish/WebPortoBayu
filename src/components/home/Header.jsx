@@ -19,12 +19,12 @@ function Header() {
               <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
             </li>
             <li>
-              {/* Tambahkan kelas 'active' jika path saat ini adalah '/projects' */}
-              <Link to="/projects" className={location.pathname === '/projects' ? 'active' : ''}>Projects</Link>
-            </li>
-            <li>
               {/* Tambahkan kelas 'active' jika path saat ini adalah '/about' */}
               <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About</Link>
+            </li>
+            <li>
+             {/* Tambahkan kelas 'active' jika path saat ini adalah '/projects' */}
+              <Link to="/projects" className={location.pathname === '/projects' ? 'active' : ''}>Projects</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>

@@ -1,33 +1,14 @@
 import React from 'react';
+import AboutIntro from '../components/about/AboutIntro';
+import Education from '../components/about/Education';
+import Certifications from '../components/about/Certifications.jsx';
 
 function AboutPage() {
   return (
-    <div>
-      <section>
-        <h1>Tentang Saya</h1>
-        <p>
-          Halo, nama saya Bayu. Saya adalah seorang [profesi Anda] yang berfokus pada [bidang keahlian].
-        </p>
-        <p>
-          Di halaman ini, saya akan berbagi tentang latar belakang, keahlian, dan minat saya.
-        </p>
-      </section>
-
-      <section>
-        <h2>Latar Belakang</h2>
-        <p>
-          [Tuliskan pengalaman kerja atau pendidikan Anda di sini].
-        </p>
-      </section>
-
-      <section>
-        <h2>Keahlian</h2>
-        <ul>
-          <li>[Keahlian 1]</li>
-          <li>[Keahlian 2]</li>
-          <li>[Keahlian 3]</li>
-        </ul>
-      </section>
+    <div className="about-page">
+      <AboutIntro />
+      <Education />
+      <Certifications />
     </div>
   );
 }
