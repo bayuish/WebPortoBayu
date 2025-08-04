@@ -1,0 +1,68 @@
+/* src/components/home/Header.css */
+
+.header {
+    background-color: #1A1A1A;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-container ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-container ul li a {
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.header-container ul li a:hover {
+    color: #ffd700;
+}
+
+/* Tambahkan gaya baru untuk link yang aktif */
+.header-container ul li a.active {
+    color: #ffd700;
+    font-weight: bold;
+    /* Anda bisa tambahkan animasi lain di sini, misalnya garis bawah */
+    position: relative;
+}
+
+.header-container ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffd700;
+    animation: underline-grow 0.3s ease forwards;
+}
+
+@keyframes underline-grow {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
