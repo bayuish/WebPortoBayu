@@ -1,0 +1,189 @@
+/* General container for the entire section */
+.work-experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 65px 2rem;
+  background-color: #12121200;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Centralized content container */
+.work-experience-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Header styling */
+.work-experience-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #ffd700;
+  margin: 0 auto 50px;
+  border-radius: 2px;
+}
+
+/* Grid for the cards */
+.work-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+/* Card styling */
+.work-experience-item {
+  background: linear-gradient(145deg, #1a1a1a, #202020);
+  padding: 30px;
+  border-radius: 16px;
+  border-left: 5px solid #ffd700;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.work-experience-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Header container for logo and text */
+.work-header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.work-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid #ffd700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-experience-item:hover .work-logo {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffd700;
+}
+
+.work-info h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.work-info .job-position {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin: 4px 0 0;
+  font-weight: 400;
+}
+
+/* Detail rows (location, period) */
+.detail-row {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.detail-icon {
+  color: #ffd700;
+  margin-right: 10px;
+}
+
+/* Responsibilities section */
+.responsibilities-title {
+  font-size: 1.1rem;
+  color: #ffd700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.responsibilities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibility-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.responsibility-item p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #bbb;
+  margin: 0;
+}
+
+.check-icon {
+  color: #25d366;
+  margin-right: 10px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Image container */
+.work-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  justify-content: center;
+}
+
+.work-image {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.work-image:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .work-experience-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .work-images-container {
+    justify-content: flex-start;
+  }
+  
+  .work-image:hover {
+    transform: scale(1.05);
+  }
+}

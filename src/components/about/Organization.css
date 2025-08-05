@@ -1,0 +1,202 @@
+/* General styling for the section */
+.organization-section {
+  padding: 65px 2vw; /* padding fleksibel mengikuti viewport */
+  background-color: #12121200;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  width: 100%; /* Gunakan penuh layar */
+  max-width: 100vw; /* Pastikan tidak melewati lebar viewport */
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.organization-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #ffd700;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.organization-section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #ffd700;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Full width grid */
+.organization-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  width: 100%;
+  margin: 0 auto; /* Tengah otomatis */
+}
+
+/* Pada layar besar, beri gap ekstra */
+@media (min-width: 1400px) {
+  .organization-list {
+    gap: 40px;
+  }
+}
+
+/* Card Styling */
+.organization-item {
+  background: linear-gradient(145deg, #1a1a1a, #202020);
+  padding: 25px;
+  border-radius: 16px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border-left: 5px solid #ffd700;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  min-height: 220px;
+}
+
+.organization-item:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Hover Prompt Text */
+.hover-promptOrganization {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.organization-item:hover .hover-promptOrganization {
+  opacity: 0;
+}
+
+/* Logo & Header */
+.organization-header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.organization-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #ffd700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.organization-item:hover .organization-logo {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+.organization-info h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.organization-info .position {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 2px 0 0;
+  font-weight: 400;
+}
+
+.period {
+  font-size: 0.95rem;
+  color: #999;
+  margin-bottom: 16px;
+}
+
+/* Details Section */
+.details-section {
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  border-top: 1px solid transparent;
+  transition: 
+    max-height 0.5s ease, 
+    opacity 0.5s ease, 
+    padding-top 0.5s ease, 
+    border-top 0.5s ease;
+}
+
+.organization-item:hover .details-section {
+  max-height: 2000px;
+  opacity: 1;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  transition-delay: 0.15s;
+}
+
+.details-section h4 {
+  font-size: 1rem;
+  color: #ffd700;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.detail-item {
+  margin-bottom: 14px;
+}
+
+.detail-item p {
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Event Images */
+.event-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.event-image {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-image:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .details-section {
+    max-height: 3000px;
+    opacity: 1;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    transition: none;
+  }
+  .hover-promptOrganization {
+    display: none;
+  }
+}

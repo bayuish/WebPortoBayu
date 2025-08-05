@@ -27,7 +27,7 @@ function Education() {
             {/* Mengubah urutan: deskripsi di atas, foto di bawah */}
             <div className="brin-project-info">
               <p className="thesis-description">
-                This project was conducted in collaboration with BRIN (National Research and Innovation Agency) and was fully funded by the state. I developed an IoT-based system for automated sediment analysis using image processing technology, combining hardware integration with network connectivity for real-time environmental monitoring.
+                This project was conducted in collaboration with BRIN (Badan Riset dan Inovasi Nasional) and was fully funded by the state. I developed an IoT-based system for automated sediment analysis using image processing technology, combining hardware integration with network connectivity for real-time environmental monitoring.
               </p>
               <img 
                 src="/src/assets/TALogo2.png"

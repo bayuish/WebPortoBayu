@@ -1,33 +1,32 @@
 // src/App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.css'; // Global CSS Anda
+import './App.css';
 
 // Import semua halaman
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage'; // <-- Tambah ContactPage
 
-// Import komponen yang dipakai di seluruh aplikasi
+// Import komponen global
 import Header from './components/home/Header';
 import Footer from './components/home/Footer';
 
 function App() {
   return (
-    <> {/* Gunakan React Fragment untuk menghindari div tambahan */}
+    <>
       <Header />
 
-      {/* Konten halaman akan ditampilkan di sini berdasarkan URL */}
-      <main className="app-container"> {/* Hanya main yang dibatasi dan terpusat */}
+      <main className="app-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/about" element={<AboutPage />} />
-          {/* Tambahkan rute untuk halaman lain di sini */}
+          <Route path="/contact" element={<ContactPage />} /> {/* <-- Tambah Route */}
         </Routes>
       </main>
 
-      {/* Footer juga akan selalu tampil di semua halaman */}
       <Footer />
     </>
   );
