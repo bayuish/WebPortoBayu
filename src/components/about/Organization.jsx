@@ -1,18 +1,18 @@
 import React from 'react';
 import './Organization.css';
 
-// Import semua gambar secara relatif (tanpa slash depan)
-import hmttLogo from '../assets/HMTTLOGO.jpg';
-import gathrakGt from '../assets/Gt.jpeg';
-import gathrakGt2 from '../assets/GT2.jpeg';
-import teslaLogo from '../assets/Tesla.jpg';
-import tesla1 from '../assets/Tesla1.jpeg';
-import tesla2 from '../assets/Tesla2.jpeg';
-import tesla3 from '../assets/Tesla3.jpeg';
-import mojangJajakaLogo from '../assets/PMJP.jpeg';
-import moka1 from '../assets/Moka1.jpeg';
-import moka2 from '../assets/Moka2.jpeg';
-import moka3 from '../assets/Moka3.jpeg';
+import hmttLogo from '../../assets/HMTTLOGO.jpg';
+import gathrakGt from '../../assets/Gt.jpeg';
+import gathrakGt2 from '../../assets/GT2.jpeg';
+import teslaLogo from '../../assets/Tesla.jpg';
+import tesla1 from '../../assets/Tesla1.jpeg';
+import tesla2 from '../../assets/Tesla2.jpeg';
+import tesla3 from '../../assets/Tesla3.jpeg';
+import mojangJajakaLogo from '../../assets/PMJP.jpeg';
+import moka1 from '../../assets/Moka1.jpeg';
+import moka2 from '../../assets/Moka2.jpeg';
+import moka3 from '../../assets/Moka3.jpeg';
+
 
 function Organization() {
   return (
