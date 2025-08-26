@@ -1,6 +1,9 @@
 import React from 'react';
 import './Education.css';
 
+// IMpor gambar
+import taLogo2 from '../../assets/TALogo2.png';
+
 function Education() {
   return (
     <section className="education-section">
@@ -30,7 +33,7 @@ function Education() {
                 This project was conducted in collaboration with BRIN (Badan Riset dan Inovasi Nasional) and was fully funded by the state. I developed an IoT-based system for automated sediment analysis using image processing technology, combining hardware integration with network connectivity for real-time environmental monitoring.
               </p>
               <img 
-                src="/src/assets/TALogo2.png"
+                src={taLogo2}
                 alt="Foto Proyek BRIN" 
                 className="brin-logo" 
               />

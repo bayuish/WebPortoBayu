@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutIntro.css';
 import { motion } from 'framer-motion';
 import { ChevronDown, Linkedin, Mail, Github, Phone } from 'lucide-react';
-import bayuImage from '/src/assets/Bayu2.png';
+import bayuImage from '../../assets/Bayu2.png'; // Jalur impor yang benar
 
 function AboutIntro() {
   return (
@@ -17,11 +17,7 @@ function AboutIntro() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            I'm Bayu Lesmana a,
-            <br />
-            Telecomunication
-            <br />
-            Engineering
+            I'm Bayu Lesmana, a<br />Telecommunication<br />Engineering
           </motion.h1>
 
           <motion.div 

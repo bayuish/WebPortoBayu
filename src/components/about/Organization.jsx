@@ -1,6 +1,21 @@
 import React from 'react';
 import './Organization.css';
 
+// Import semua gambar secara statis
+import hmttLogo from '../../assets/HMTTLOGO.jpg';
+import gathrakGt from '../../assets/Gt.jpeg';
+import gathrakGt2 from '../../assets/GT2.jpeg';
+import gathrakGt3 from 'https://placehold.co/400x250/1a1a1a/ffffff?text=Gathrak+Photo+3'; // Ini adalah URL eksternal, jadi tidak perlu diimpor
+import teslaLogo from '../../assets/Tesla.jpg';
+import tesla1 from '../../assets/Tesla1.jpeg';
+import tesla2 from '../../assets/Tesla2.jpeg';
+import tesla3 from '../../assets/Tesla3.jpeg';
+import mojangJajakaLogo from '../../assets/PMJP.jpeg';
+import moka1 from '../../assets/Moka1.jpeg';
+import moka2 from '../../assets/Moka2.jpeg';
+import moka3 from '../../assets/Moka3.jpeg';
+
+
 function Organization() {
   return (
     <section className="organization-section">
@@ -14,7 +29,7 @@ function Organization() {
           
           <div className="organization-header-container">
             <img 
-              src="/src/assets/HMTTLOGO.jpg"
+              src={hmttLogo}
               alt="HMTT Logo" 
               className="organization-logo" 
             />
@@ -40,9 +55,9 @@ function Organization() {
             </div>
             {/* Image Gallery untuk Gathrak */}
             <div className="event-images-container">
-              <img src="/src/assets/Gt.jpeg" alt="Gathrak Event" className="event-image" />
-              <img src="/src/assets/GT2.jpeg" alt="Gathrak Event" className="event-image" />
-              <img src="https://placehold.co/400x250/1a1a1a/ffffff?text=Gathrak+Photo+3" alt="Gathrak Event" className="event-image" />
+              <img src={gathrakGt} alt="Gathrak Event" className="event-image" />
+              <img src={gathrakGt2} alt="Gathrak Event" className="event-image" />
+              <img src={gathrakGt3} alt="Gathrak Event" className="event-image" />
             </div>
           </div>
         </div>
@@ -54,7 +69,7 @@ function Organization() {
           </div>
           <div className="organization-header-container">
             <img 
-              src="/src/assets/Tesla.jpg"
+              src={teslaLogo}
               alt="HMTT Logo" 
               className="organization-logo" 
             />
@@ -80,9 +95,9 @@ function Organization() {
             </div>
             {/* Image Gallery untuk TESLA */}
             <div className="event-images-container">
-              <img src="/src/assets/Tesla1.jpeg"   alt="TESLA Event" className="event-image" />
-              <img src="/src/assets/Tesla2.jpeg"alt="TESLA Event" className="event-image" />
-              <img src="/src/assets/Tesla3.jpeg" alt="TESLA Event" className="event-image" />
+              <img src={tesla1}   alt="TESLA Event" className="event-image" />
+              <img src={tesla2} alt="TESLA Event" className="event-image" />
+              <img src={tesla3} alt="TESLA Event" className="event-image" />
             </div>
           </div>
         </div>
@@ -94,7 +109,7 @@ function Organization() {
           </div>
           <div className="organization-header-container">
             <img 
-              src="/src/assets/PMJP.jpeg" 
+              src={mojangJajakaLogo}
               alt="Mojang Jajaka Purwakarta Logo" 
               className="organization-logo" 
             />
@@ -120,9 +135,9 @@ function Organization() {
             </div>
             {/* Image Gallery untuk Mojang Jajaka */}
             <div className="event-images-container">
-              <img src="/src/assets/Moka1.jpeg"  alt="Mojang Jajaka Event" className="event-image" />
-              <img src="/src/assets/Moka2.jpeg"  alt="Mojang Jajaka Event" className="event-image" />
-              <img src="/src/assets/Moka3.jpeg"   alt="Mojang Jajaka Event" className="event-image" />
+              <img src={moka1}  alt="Mojang Jajaka Event" className="event-image" />
+              <img src={moka2}  alt="Mojang Jajaka Event" className="event-image" />
+              <img src={moka3}   alt="Mojang Jajaka Event" className="event-image" />
             </div>
           </div>
         </div>

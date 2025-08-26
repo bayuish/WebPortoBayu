@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import ParticlesBackground from './ParticlesBackground.jsx';
 import './HeroSection.css';
 
+// IMpor gambar
+import Bayu1 from '../../assets/Bayu1.png';
+
 function HeroSection() {
   return (
     <section className="hero">
@@ -24,12 +27,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          I'm <motion.span 
-                  className="name-highlight"
-                  // Hapus properti whileHover dan style cursor karena efek akan selalu ada
-                >
-                  Bayu Lesmana
-                </motion.span>, a Telecommunication Engineering graduate with core expertise in network infrastructure, radio frequency systems, and server administration. Beyond my telecommunications foundation, I've expanded my skillset as a Full-stack Developer, creating both Android applications and web solutions. My comprehensive technical background also includes electronics fundamentals, IoT implementation, and microcontroller programming, enabling me to deliver end-to-end solutions from network infrastructure to user applications
+          I'm <span className="name-highlight">Bayu Lesmana</span>, a Telecommunication Engineering graduate with core expertise in network infrastructure, radio frequency systems, and server administration. Beyond my telecommunications foundation, I've expanded my skillset as a Full-stack Developer, creating both Android applications and web solutions. My comprehensive technical background also includes electronics fundamentals, IoT implementation, and microcontroller programming, enabling me to deliver end-to-end solutions from network infrastructure to user applications
         </motion.p>
 
         <motion.button
@@ -51,7 +49,7 @@ function HeroSection() {
         transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
       >
         <ParticlesBackground />
-        <img src="/src/assets/Bayu1.png" alt="Bayu" />
+        <img src={Bayu1} alt="Bayu" />
       </motion.div>
     </section>
   );
