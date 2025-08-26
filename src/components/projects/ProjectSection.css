@@ -1,0 +1,39 @@
+.project-section {
+  margin-bottom: 4rem; /* Jarak antara setiap kategori proyek */
+  padding: 0 15px; /* Memberi sedikit padding di sisi untuk mobile */
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ffd700; /* Warna judul kategori */
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Layout responsif untuk kartu proyek */
+  gap: 2.5rem; /* Jarak antar kartu */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .projects-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Satu kolom untuk layar sangat kecil */
+  }
+}

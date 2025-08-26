@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 65px 2rem;
+  padding: 10px 2rem;
   background-color: #12121200;
   color: #f0f0f0;
   font-family: 'Inter', sans-serif;
@@ -15,6 +15,7 @@
 /* Centralized content container */
 .work-experience-container {
   width: 100%;
+
   max-width: 1200px;
 }
 

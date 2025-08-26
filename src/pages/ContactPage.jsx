@@ -21,8 +21,8 @@ function Contact() {
       () => {
         Swal.fire({
           icon: 'success',
-          title: 'Pesan Terkirim!',
-          text: 'Terima kasih, saya akan membalas secepatnya.',
+          title: 'Message Sent!',
+          text: 'Thank you, I will reply as soon as possible.',
           confirmButtonColor: '#ffd700',
           background: '#1e1e1e',
           color: '#fff'
@@ -32,8 +32,8 @@ function Contact() {
       (error) => {
         Swal.fire({
           icon: 'error',
-          title: 'Gagal Mengirim!',
-          text: 'Silakan coba lagi nanti.',
+          title: 'Failed to Send!',
+          text: 'Please try again later.',
           confirmButtonColor: '#ffd700',
           background: '#1e1e1e',
           color: '#fff'

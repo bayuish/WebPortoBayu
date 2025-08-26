@@ -1,0 +1,165 @@
+/* Container Utama */
+.ip-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa00;
+}
+
+.ip-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ip-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 0 auto 50px;
+  border-radius: 2px;
+}
+
+/* Grid untuk Kartu HAKI */
+.ip-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Kartu HAKI */
+.ip-card {
+  background: linear-gradient(145deg, #1a1a1a, #202020);
+  border-left: 5px solid #ffd700;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ip-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ip-icon-award {
+  color: #ffd700;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.ip-info {
+  flex-grow: 1;
+}
+
+.ip-title-card {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ip-issuer-card {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.ip-details {
+  font-size: 0.9rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.ip-details span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.ip-period {
+  font-style: italic;
+}
+
+.ip-description {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.ip-link {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.ip-link a {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.ip-link a:hover {
+  color: #ffd700;
+}
+
+.ip-link svg {
+  margin-left: 5px;
+}
+
+/* Bagian baru untuk efek hover */
+.ip-image-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative; /* Penting untuk penempatan gambar kedua */
+  width: 100%;
+  padding-top: 141.42%; /* Rasio aspek untuk ukuran A4 Portrait (297/210) * 100% */
+}
+
+.ip-image, .ip-image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.ip-image-hover {
+  opacity: 0; /* Secara default, gambar halaman 2 disembunyikan */
+}
+
+.ip-image-container:hover .ip-image {
+  opacity: 0; /* Saat hover, gambar halaman 1 menghilang */
+}
+
+.ip-image-container:hover .ip-image-hover {
+  opacity: 1; /* Saat hover, gambar halaman 2 muncul */
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+  .ip-grid {
+    grid-template-columns: 1fr;
+  }
+}
