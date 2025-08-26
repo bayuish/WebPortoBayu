@@ -1,21 +1,18 @@
 import React from 'react';
 import './Organization.css';
 
-// Import semua gambar secara statis menggunakan jalur relatif yang benar
-import hmttLogo from '/src/assets/HMTTLOGO.jpg';
-import gathrakGt from '/src/assets/Gt.jpeg';
-import gathrakGt2 from '/src/assets/GT2.jpeg';
-import teslaLogo from '/src/assets/Tesla.jpg';
-import tesla1 from '/src/assets/Tesla1.jpeg';
-import tesla2 from '/src/assets/Tesla2.jpeg';
-import tesla3 from '/src/assets/Tesla3.jpeg';
-import mojangJajakaLogo from '/src/assets/PMJP.jpeg';
-import moka1 from '/src/assets/Moka1.jpeg';
-import moka2 from '/src/assets/Moka2.jpeg';
-import moka3 from '/src/assets/Moka3.jpeg';
-
-// Perhatikan: Gambar eksternal seperti 'https://placehold.co/...' tidak perlu diimpor
-// Cukup gunakan URL-nya langsung di tag <img>
+// Import semua gambar secara relatif (tanpa slash depan)
+import hmttLogo from '../assets/HMTTLOGO.jpg';
+import gathrakGt from '../assets/Gt.jpeg';
+import gathrakGt2 from '../assets/GT2.jpeg';
+import teslaLogo from '../assets/Tesla.jpg';
+import tesla1 from '../assets/Tesla1.jpeg';
+import tesla2 from '../assets/Tesla2.jpeg';
+import tesla3 from '../assets/Tesla3.jpeg';
+import mojangJajakaLogo from '../assets/PMJP.jpeg';
+import moka1 from '../assets/Moka1.jpeg';
+import moka2 from '../assets/Moka2.jpeg';
+import moka3 from '../assets/Moka3.jpeg';
 
 function Organization() {
   return (
@@ -58,8 +55,12 @@ function Organization() {
             <div className="event-images-container">
               <img src={gathrakGt} alt="Gathrak Event" className="event-image" />
               <img src={gathrakGt2} alt="Gathrak Event" className="event-image" />
-              {/* Gambar dari URL eksternal tidak perlu diimpor */}
-              <img src="https://placehold.co/400x250/1a1a1a/ffffff?text=Gathrak+Photo+3" alt="Gathrak Event" className="event-image" />
+              {/* Gambar dari URL eksternal */}
+              <img 
+                src="https://placehold.co/400x250/1a1a1a/ffffff?text=Gathrak+Photo+3" 
+                alt="Gathrak Event" 
+                className="event-image" 
+              />
             </div>
           </div>
         </div>
@@ -72,7 +73,7 @@ function Organization() {
           <div className="organization-header-container">
             <img 
               src={teslaLogo}
-              alt="HMTT Logo" 
+              alt="TESLA Logo" 
               className="organization-logo" 
             />
             <div className="organization-info">
@@ -97,7 +98,7 @@ function Organization() {
             </div>
             {/* Image Gallery untuk TESLA */}
             <div className="event-images-container">
-              <img src={tesla1}   alt="TESLA Event" className="event-image" />
+              <img src={tesla1} alt="TESLA Event" className="event-image" />
               <img src={tesla2} alt="TESLA Event" className="event-image" />
               <img src={tesla3} alt="TESLA Event" className="event-image" />
             </div>
@@ -137,9 +138,9 @@ function Organization() {
             </div>
             {/* Image Gallery untuk Mojang Jajaka */}
             <div className="event-images-container">
-              <img src={moka1}  alt="Mojang Jajaka Event" className="event-image" />
-              <img src={moka2}  alt="Mojang Jajaka Event" className="event-image" />
-              <img src={moka3}   alt="Mojang Jajaka Event" className="event-image" />
+              <img src={moka1} alt="Mojang Jajaka Event" className="event-image" />
+              <img src={moka2} alt="Mojang Jajaka Event" className="event-image" />
+              <img src={moka3} alt="Mojang Jajaka Event" className="event-image" />
             </div>
           </div>
         </div>
