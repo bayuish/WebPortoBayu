@@ -1,15 +1,13 @@
-// src/main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // Ini untuk routing
 import App from './App.jsx';
 import './index.css';
+import { HashRouter } from 'react-router-dom'; // Changed from BrowserRouter
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* Aplikasi dibungkus dengan BrowserRouter */}
-    <BrowserRouter>
+    <HashRouter> // Changed from BrowserRouter
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    </HashRouter>
+  </React.StrictMode>
 );
