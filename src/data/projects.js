@@ -2,34 +2,34 @@
 // Sesuaikan jalur impor jika struktur folder Anda berbeda.
 
 // Gambar Proyek 'SedimTrack-IoT'
-import sedimtrack1 from '../assets/project/Sedimtrack1.png';
-import sedimtrack2 from '../assets/project/Sedimtrack2.png';
-import sedimtrack3 from '../assets/project/Sedimtrack3.png';
-import sedimtrack4 from '../assets/project/Sedimtrack4.png';
+import sedimtrack1 from '/src/assets/project/Sedimtrack1.png';
+import sedimtrack2 from '/src/assets/project/Sedimtrack2.png';
+import sedimtrack3 from '/src/assets/project/Sedimtrack3.png';
+import sedimtrack4 from '/src/assets/project/Sedimtrack4.png';
 
 // Gambar Proyek 'Food Order App'
-import food from '../assets/project/food.png';
+import food from '/src/assets/project/food.png';
 
 // Gambar Proyek 'Bankbumi'
-import bb1 from '../assets/project/bb1.png';
-import bb2 from '../assets/project/bb2.png';
+import bb1 from '/src/assets/project/bb1.png';
+import bb2 from '/src/assets/project/bb2.png';
 
 // Gambar Proyek 'Danfoss Inverter'
-import danfos from '../assets/project/danfos.png';
+import danfos from '/src/assets/project/danfos.png';
 
 // Gambar Proyek 'Logistic Tracking Dashboard'
-import log1 from '../assets/project/Log1.png';
-import log2 from '../assets/project/Log2.png';
-import log3 from '../assets/project/Log3.png';
+import log1 from '/src/assets/project/Log1.png';
+import log2 from '/src/assets/project/Log2.png';
+import log3 from '/src/assets/project/Log3.png';
 
 // Gambar Proyek 'Mobile LMS'
-import mob1 from '../assets/project/Mob1.png';
-import mob2 from '../assets/project/Mob2.png';
+import mob1 from '/src/assets/project/Mob1.png';
+import mob2 from '/src/assets/project/Mob2.png';
 
 // Gambar Proyek 'AnemoLink'
-import ane1 from '../assets/project/ane1.png';
-import ane2 from '../assets/project/ane2.png';
-import ane3 from '../assets/project/ane3.png';
+import ane1 from '/src/assets/project/ane1.png';
+import ane2 from '/src/assets/project/ane2.png';
+import ane3 from '/src/assets/project/ane3.png';
 
 
 export const projects = [
